@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheel of Fortune!</title>
-    <script src="./js/randomWord.js"></script>
-    <script src="./js/index.js"></script>
-
+    <link rel="stylesheet" href="style.css"/>
+    <script src="./js/randomWord.js" defer></script>
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
-    
+    <h1> Wheel of Fortune</h1>
+
+    <ul id="list-word">
+        <!-- programmatically add letters-->
+    </ul>
+
+    <button id="btn-start">Start</button>
+
+    <form id="letters-form">
+        <p>You get <b>Three</b> Constonant Guesses</p>
+        <div>
+            <label for"constanant-one" style="display: none">first Constanant</label>
+            <input type="text" id="constanant-one" placeholder="First Constanant" name="constanant-one"/>
+        </div>
+        <div>
+            <label for"constanant-two" style="display: none">Second Constanant</label>
+            <input type="text" id="constanant-two" placeholder="Second Constanant" name="constanant-two"/>
+        </div>
+        <div>
+            <label for"constanant-three" style="display: none">Third Constanant</label>
+            <input type="text"  id="constanant-three" placeholder="Third Constanant" name="constanant-three"/>
+        </div>
+        <p>You get <b>One</b> Vowel Guess</p>
+        <div>
+            <label for"vowel-one" style="display: none">Vowel</label>
+            <input type="text" id="vowel-one" placeholder="Vowel" name="vowel-one"/>
+        </div>
+
+        <input type="submit" id="btn-submit" value="submit" />
+    </form>
+
+    <p id="p-restart"> Want to play again?</p>
+    <button id="btn-restart">Restart Game</button>
 </body>
 </html>
